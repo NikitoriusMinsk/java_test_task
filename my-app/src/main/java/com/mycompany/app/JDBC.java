@@ -169,7 +169,7 @@ public class JDBC {
 
     public void DeleteShop(String id){
         try {
-            statement.execute("Delete from Shops where id="+id+"");
+            statement.execute("Delete from Shops where shop_id="+id+"");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -177,7 +177,7 @@ public class JDBC {
 
     public void DeleteMedGroup(String id){
         try {
-            statement.execute("Delete from Med_groups where id="+id+"");
+            statement.execute("Delete from Med_groups where group_id="+id+"");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -185,7 +185,7 @@ public class JDBC {
 
     public void DeleteEmployee(String id){
         try {
-            statement.execute("Delete from Employees where id="+id+"");
+            statement.execute("Delete from Employees where emp_id="+id+"");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -193,7 +193,7 @@ public class JDBC {
 
     public void DeleteMedicine(String id){
         try {
-            statement.execute("Delete from Medicine where id="+id+"");
+            statement.execute("Delete from Medicine where med_id="+id+"");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -201,7 +201,7 @@ public class JDBC {
 
     public void DeleteSale(String id){
         try {
-            statement.execute("Delete from Sales where id="+id+"");
+            statement.execute("Delete from Sales where sale_id="+id+"");
         } catch (SQLException e) {
             e.printStackTrace();
         }

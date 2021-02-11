@@ -26,7 +26,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="b3eee021-566c-47da-bf80-260bd8246b18">
-        <schema name="pharmacy" object-types="table, procedure, view, column, index, constraint, function, dataset trigger" />
+        <schema name="pharmacy" object-types="function, dataset trigger, view, table, constraint, procedure, column, index" />
       </connection>
     </loaded-nodes>
   </component>
