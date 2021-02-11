@@ -119,33 +119,33 @@ public class JDBC {
         return ans;
     }
 
-    public void AddShop(String id, String address, String name){
+    public void AddShop(String address, String name){
         try {
-            statement.execute("Insert into Shops values ("+id+","+address+","+name+")");
+            statement.execute("Insert into Shops (adress,shop_name) values ("+address+","+name+")");
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public void AddMedGroup(String id, String name){
+    public void AddMedGroup(String name){
         try {
-            statement.execute("Insert into Med_groups values ("+id+","+name+")");
+            statement.execute("Insert into Med_groups (group_name) values ("+name+")");
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public void AddEmployee(String id, String name, String position, String shopID){
+    public void AddEmployee(String name, String position, String shopID){
         try {
-            statement.execute("Insert into Employees values ("+id+","+name+","+position+","+shopID+")");
+            statement.execute("Insert into Employees (shop_id,emp_name,position) values ("+name+","+position+","+shopID+")");
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public void AddMedicine(String id, String group_id, String name){
+    public void AddMedicine(String group_id, String name){
         try {
-            statement.execute("Insert into Medicine values ("+id+","+group_id+","+name+")");
+            statement.execute("Insert into Medicine (group_id,med_name) values ("+group_id+","+name+")");
         } catch (SQLException e) {
             e.printStackTrace();
         }
